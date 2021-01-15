@@ -2,6 +2,7 @@ venv/
 db.sqlite3
 .idea
 __pycache__
-logs.*
-suites.*
-reports.*
+logs/*
+suites/*
+reports/*
+front_ends/
