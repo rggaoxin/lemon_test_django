@@ -1,0 +1,541 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pm_20210114150348 - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      text-align: center;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: pm_20210114150348</h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2021-01-14 15:03:47</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">1.254 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 1.5.8 </td>
+      <td>CPython 3.7.3 </td>
+      <td colspan="2">Windows-10-10.0.18362-SP0</td>
+    </tr>
+    <tr>
+      <th>TOTAL</th>
+      <th>SUCCESS</th>
+      <th>FAILED</th>
+      <th>ERROR</th>
+      <th>SKIPPED</th>
+      <!-- <th>ExpectedFailure</th>
+      <th>UnexpectedSuccess</th> -->
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <!-- <td>0</td>
+      <td>0</td> -->
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>pm</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <th>base_url</th>
+      <td colspan="2">http://192.168.85.85:2280</td>
+      <th colspan="2" class="detail">
+        <a class="button" href="#suite_output_1">parameters & output</a>
+        <div id="suite_output_1" class="overlay">
+            <div class="popup">
+                <h2>Parameters and Output</h2>
+                <a class="close" href="#suite_1">&times;</a>
+                <div class="content">
+                  <div style="overflow: auto">
+                      <table>
+                        <tr>
+                          <th>variables</th>
+                          <th>output</th>
+                        </tr>
+                        
+                      </table>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</td>
+      <td colspan="2">login</td>
+      <td style="text-align:center;width:6em;">1252.0 ms</td>
+      <td class="detail">
+
+        <a class="button" href="#popup_log_1_1">log</a>
+        <div id="popup_log_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://192.168.85.85:2280/bff/author/loginNew
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: python-requests/2.25.1
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>content-type</strong>: application/json;charset=UTF-8
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 45
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>start_timestamp</th>
+                      <td>
+                        
+                          2021-01-14 15:03:47
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>json</th>
+                      <td>
+                        
+                          {'password': 'jsti@pm', 'username': '026613'}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {"password": "jsti@pm", "username": "026613"}
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>User-Agent</strong>: python-requests/2.25.1
+                            </div>
+                            
+                            <div>
+                              <strong>Accept-Encoding</strong>: gzip, deflate
+                            </div>
+                            
+                            <div>
+                              <strong>Accept</strong>: */*
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>content-type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 45
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_size</th>
+                        <td>
+                          
+                            3488
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>response_time_ms</th>
+                        <td>
+                          
+                            1252.0
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>elapsed_ms</th>
+                        <td>
+                          
+                            247.582
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content</th>
+                        <td>
+                          
+                            {"success":true,"message":"登录成功！","code":201,"result":{"kcAccesstoken":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJPN3RXYjhZa2c5MUhFUkFCNXdON255dXI4QkczYlFQb0tYU1dmcUo4by13In0.eyJqdGkiOiJiOWExOGQ4MC02MGFjLTRjMmItODgyOS1jZDdhMjgzNDkyMWIiLCJleHAiOjE2MTA2MTg2MzksIm5iZiI6MCwiaWF0IjoxNjEwNjA3ODM5LCJpc3MiOiJodHRwOi8vMTkyLjE2OC44NS44MzoxODA4MC9hdXRoL3JlYWxtcy9qc3RpcG0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZTNjMTAwN2EtMjZkNy00NDYwLWEyNTQtOGQ3NDNhZmJkNTA1IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoicG9ydGFsIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiZTQ1NGVlYzMtNjRhNS00NzFjLWJjNDMtNTRkMTUxNzQ2NzQ5IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vMTkyLjE2OC44NS44Mzo4MDgxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoi56uLIOmSnyIsInByZWZlcnJlZF91c2VybmFtZSI6IjAyNjYxMyIsImdpdmVuX25hbWUiOiLnq4siLCJmYW1pbHlfbmFtZSI6IumSnyIsImVtYWlsIjoiemw2MTNAanN0aS5jb20ifQ.Ynv3eozX1v6Xor196NGucqoLWGayIOGawtIaxOpEEyAeOx0Y1bpqXkm9LC_NkZ6rsBoJIP5caTJg2BxgfeWwvJFjbYU3LDwwQ1U7DlKFb3DM6G1QE7hRbesJfn-rI2DpygNwcuSAPm3GVMP1dL3csbRSdMZYgg27ArguGxkL4GpKgSJFgdFANQ3LOG4jyWgaBhU5SUCHYPSyjfDGhpJONzlXG3BuHW0iR1mPBz-iEQCtzjeFaL8Yr50Yg6QgxZLi_IQrwqnjbIdl3t2VzwhALjn962QtIHL0tP7OX5WD-736tFgc4FwV9VCO44B1Ak2jUcwgJPSIExmc580KkGz3WQ","userInfo":{"empId":"613207691336800001","sysUserId":"613206331203700001","avatar":"","sysUserName":"钟立","sysUserCode":"026613","orgGroupId":"1568813602415","sysOrgId":"234306091382770485","sysPositionCode":"05400373","sysPositionName":"三级工程师","pjEmpId":"026613","sysOrgName":"智慧城市研究院智慧交通研究所","isDefaultgroup":"1","sysOrgCode":"05400","orgGroupCode":"YWTX","isCompany":null},"prefixusertoken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA2MTUwMjgsInVzZXJpbmZvIjoie1wiYXZhdGFyXCI6XCJcIixcImVtcElkXCI6NjEzMjA3NjkxMzM2ODAwMDAxLFwiaXNEZWZhdWx0Z3JvdXBcIjpcIjFcIixcIm9yZ0dyb3VwQ29kZVwiOlwiWVdUWFwiLFwib3JnR3JvdXBJZFwiOjE1Njg4MTM2MDI0MTUsXCJwakVtcElkXCI6XCIwMjY2MTNcIixcInN5c09yZ0NvZGVcIjpcIjA1NDAwXCIsXCJzeXNPcmdJZFwiOjIzNDMwNjA5MTM4Mjc3MDQ4NSxcInN5c09yZ05hbWVcIjpcIuaZuuaFp-WfjuW4gueglOeptumZouaZuuaFp-S6pOmAmueglOeptuaJgFwiLFwic3lzUG9zaXRpb25Db2RlXCI6XCIwNTQwMDM3M1wiLFwic3lzUG9zaXRpb25OYW1lXCI6XCLkuInnuqflt6XnqIvluIhcIixcInN5c1VzZXJDb2RlXCI6XCIwMjY2MTNcIixcInN5c1VzZXJJZFwiOjYxMzIwNjMzMTIwMzcwMDAwMSxcInN5c1VzZXJOYW1lXCI6XCLpkp_nq4tcIn0ifQ.lPlkgUS8zg47G_guQnyY3h2N6ul08HiOQl00KG9r3xE","kcRefreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlMWYxM2VhMi0wMTExLTQ4ZmUtOTA3Mi02ZmJlOTQ5M2M0ZjQifQ.eyJqdGkiOiI1ZWY1NGNkYi0wZjU0LTRkYzctYTk2NS1iMGVhNTRmNGJjY2IiLCJleHAiOjE2MTA2MTg2MzksIm5iZiI6MCwiaWF0IjoxNjEwNjA3ODM5LCJpc3MiOiJodHRwOi8vMTkyLjE2OC44NS44MzoxODA4MC9hdXRoL3JlYWxtcy9qc3RpcG0iLCJhdWQiOiJodHRwOi8vMTkyLjE2OC44NS44MzoxODA4MC9hdXRoL3JlYWxtcy9qc3RpcG0iLCJzdWIiOiJlM2MxMDA3YS0yNmQ3LTQ0NjAtYTI1NC04ZDc0M2FmYmQ1MDUiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoicG9ydGFsIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiZTQ1NGVlYzMtNjRhNS00NzFjLWJjNDMtNTRkMTUxNzQ2NzQ5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwifQ.J4FwND09d-47uH1KVYaj56WmZjz3eps3uxaK0SCrodQ"},"timestamp":1610607828869,"workid":null}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                              <pre></pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://192.168.85.85:2280/bff/author/loginNew
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                            {"success":true,"message":"登录成功！","code":201,"result":{"kcAccesstoken":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJPN3RXYjhZa2c5MUhFUkFCNXdON255dXI4QkczYlFQb0tYU1dmcUo4by13In0.eyJqdGkiOiJiOWExOGQ4MC02MGFjLTRjMmItODgyOS1jZDdhMjgzNDkyMWIiLCJleHAiOjE2MTA2MTg2MzksIm5iZiI6MCwiaWF0IjoxNjEwNjA3ODM5LCJpc3MiOiJodHRwOi8vMTkyLjE2OC44NS44MzoxODA4MC9hdXRoL3JlYWxtcy9qc3RpcG0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZTNjMTAwN2EtMjZkNy00NDYwLWEyNTQtOGQ3NDNhZmJkNTA1IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoicG9ydGFsIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiZTQ1NGVlYzMtNjRhNS00NzFjLWJjNDMtNTRkMTUxNzQ2NzQ5IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vMTkyLjE2OC44NS44Mzo4MDgxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoi56uLIOmSnyIsInByZWZlcnJlZF91c2VybmFtZSI6IjAyNjYxMyIsImdpdmVuX25hbWUiOiLnq4siLCJmYW1pbHlfbmFtZSI6IumSnyIsImVtYWlsIjoiemw2MTNAanN0aS5jb20ifQ.Ynv3eozX1v6Xor196NGucqoLWGayIOGawtIaxOpEEyAeOx0Y1bpqXkm9LC_NkZ6rsBoJIP5caTJg2BxgfeWwvJFjbYU3LDwwQ1U7DlKFb3DM6G1QE7hRbesJfn-rI2DpygNwcuSAPm3GVMP1dL3csbRSdMZYgg27ArguGxkL4GpKgSJFgdFANQ3LOG4jyWgaBhU5SUCHYPSyjfDGhpJONzlXG3BuHW0iR1mPBz-iEQCtzjeFaL8Yr50Yg6QgxZLi_IQrwqnjbIdl3t2VzwhALjn962QtIHL0tP7OX5WD-736tFgc4FwV9VCO44B1Ak2jUcwgJPSIExmc580KkGz3WQ","userInfo":{"empId":"613207691336800001","sysUserId":"613206331203700001","avatar":"","sysUserName":"钟立","sysUserCode":"026613","orgGroupId":"1568813602415","sysOrgId":"234306091382770485","sysPositionCode":"05400373","sysPositionName":"三级工程师","pjEmpId":"026613","sysOrgName":"智慧城市研究院智慧交通研究所","isDefaultgroup":"1","sysOrgCode":"05400","orgGroupCode":"YWTX","isCompany":null},"prefixusertoken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA2MTUwMjgsInVzZXJpbmZvIjoie1wiYXZhdGFyXCI6XCJcIixcImVtcElkXCI6NjEzMjA3NjkxMzM2ODAwMDAxLFwiaXNEZWZhdWx0Z3JvdXBcIjpcIjFcIixcIm9yZ0dyb3VwQ29kZVwiOlwiWVdUWFwiLFwib3JnR3JvdXBJZFwiOjE1Njg4MTM2MDI0MTUsXCJwakVtcElkXCI6XCIwMjY2MTNcIixcInN5c09yZ0NvZGVcIjpcIjA1NDAwXCIsXCJzeXNPcmdJZFwiOjIzNDMwNjA5MTM4Mjc3MDQ4NSxcInN5c09yZ05hbWVcIjpcIuaZuuaFp-WfjuW4gueglOeptumZouaZuuaFp-S6pOmAmueglOeptuaJgFwiLFwic3lzUG9zaXRpb25Db2RlXCI6XCIwNTQwMDM3M1wiLFwic3lzUG9zaXRpb25OYW1lXCI6XCLkuInnuqflt6XnqIvluIhcIixcInN5c1VzZXJDb2RlXCI6XCIwMjY2MTNcIixcInN5c1VzZXJJZFwiOjYxMzIwNjMzMTIwMzcwMDAwMSxcInN5c1VzZXJOYW1lXCI6XCLpkp_nq4tcIn0ifQ.lPlkgUS8zg47G_guQnyY3h2N6ul08HiOQl00KG9r3xE","kcRefreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlMWYxM2VhMi0wMTExLTQ4ZmUtOTA3Mi02ZmJlOTQ5M2M0ZjQifQ.eyJqdGkiOiI1ZWY1NGNkYi0wZjU0LTRkYzctYTk2NS1iMGVhNTRmNGJjY2IiLCJleHAiOjE2MTA2MTg2MzksIm5iZiI6MCwiaWF0IjoxNjEwNjA3ODM5LCJpc3MiOiJodHRwOi8vMTkyLjE2OC44NS44MzoxODA4MC9hdXRoL3JlYWxtcy9qc3RpcG0iLCJhdWQiOiJodHRwOi8vMTkyLjE2OC44NS44MzoxODA4MC9hdXRoL3JlYWxtcy9qc3RpcG0iLCJzdWIiOiJlM2MxMDA3YS0yNmQ3LTQ0NjAtYTI1NC04ZDc0M2FmYmQ1MDUiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoicG9ydGFsIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiZTQ1NGVlYzMtNjRhNS00NzFjLWJjNDMtNTRkMTUxNzQ2NzQ5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwifQ.J4FwND09d-47uH1KVYaj56WmZjz3eps3uxaK0SCrodQ"},"timestamp":1610607828869,"workid":null}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                            {'success': True, 'message': '登录成功！', 'code': 201, 'result': {'kcAccesstoken': 'eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJPN3RXYjhZa2c5MUhFUkFCNXdON255dXI4QkczYlFQb0tYU1dmcUo4by13In0.eyJqdGkiOiJiOWExOGQ4MC02MGFjLTRjMmItODgyOS1jZDdhMjgzNDkyMWIiLCJleHAiOjE2MTA2MTg2MzksIm5iZiI6MCwiaWF0IjoxNjEwNjA3ODM5LCJpc3MiOiJodHRwOi8vMTkyLjE2OC44NS44MzoxODA4MC9hdXRoL3JlYWxtcy9qc3RpcG0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZTNjMTAwN2EtMjZkNy00NDYwLWEyNTQtOGQ3NDNhZmJkNTA1IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoicG9ydGFsIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiZTQ1NGVlYzMtNjRhNS00NzFjLWJjNDMtNTRkMTUxNzQ2NzQ5IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vMTkyLjE2OC44NS44Mzo4MDgxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoi56uLIOmSnyIsInByZWZlcnJlZF91c2VybmFtZSI6IjAyNjYxMyIsImdpdmVuX25hbWUiOiLnq4siLCJmYW1pbHlfbmFtZSI6IumSnyIsImVtYWlsIjoiemw2MTNAanN0aS5jb20ifQ.Ynv3eozX1v6Xor196NGucqoLWGayIOGawtIaxOpEEyAeOx0Y1bpqXkm9LC_NkZ6rsBoJIP5caTJg2BxgfeWwvJFjbYU3LDwwQ1U7DlKFb3DM6G1QE7hRbesJfn-rI2DpygNwcuSAPm3GVMP1dL3csbRSdMZYgg27ArguGxkL4GpKgSJFgdFANQ3LOG4jyWgaBhU5SUCHYPSyjfDGhpJONzlXG3BuHW0iR1mPBz-iEQCtzjeFaL8Yr50Yg6QgxZLi_IQrwqnjbIdl3t2VzwhALjn962QtIHL0tP7OX5WD-736tFgc4FwV9VCO44B1Ak2jUcwgJPSIExmc580KkGz3WQ', 'userInfo': {'empId': '613207691336800001', 'sysUserId': '613206331203700001', 'avatar': '', 'sysUserName': '钟立', 'sysUserCode': '026613', 'orgGroupId': '1568813602415', 'sysOrgId': '234306091382770485', 'sysPositionCode': '05400373', 'sysPositionName': '三级工程师', 'pjEmpId': '026613', 'sysOrgName': '智慧城市研究院智慧交通研究所', 'isDefaultgroup': '1', 'sysOrgCode': '05400', 'orgGroupCode': 'YWTX', 'isCompany': None}, 'prefixusertoken': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA2MTUwMjgsInVzZXJpbmZvIjoie1wiYXZhdGFyXCI6XCJcIixcImVtcElkXCI6NjEzMjA3NjkxMzM2ODAwMDAxLFwiaXNEZWZhdWx0Z3JvdXBcIjpcIjFcIixcIm9yZ0dyb3VwQ29kZVwiOlwiWVdUWFwiLFwib3JnR3JvdXBJZFwiOjE1Njg4MTM2MDI0MTUsXCJwakVtcElkXCI6XCIwMjY2MTNcIixcInN5c09yZ0NvZGVcIjpcIjA1NDAwXCIsXCJzeXNPcmdJZFwiOjIzNDMwNjA5MTM4Mjc3MDQ4NSxcInN5c09yZ05hbWVcIjpcIuaZuuaFp-WfjuW4gueglOeptumZouaZuuaFp-S6pOmAmueglOeptuaJgFwiLFwic3lzUG9zaXRpb25Db2RlXCI6XCIwNTQwMDM3M1wiLFwic3lzUG9zaXRpb25OYW1lXCI6XCLkuInnuqflt6XnqIvluIhcIixcInN5c1VzZXJDb2RlXCI6XCIwMjY2MTNcIixcInN5c1VzZXJJZFwiOjYxMzIwNjMzMTIwMzcwMDAwMSxcInN5c1VzZXJOYW1lXCI6XCLpkp_nq4tcIn0ifQ.lPlkgUS8zg47G_guQnyY3h2N6ul08HiOQl00KG9r3xE', 'kcRefreshToken': 'eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlMWYxM2VhMi0wMTExLTQ4ZmUtOTA3Mi02ZmJlOTQ5M2M0ZjQifQ.eyJqdGkiOiI1ZWY1NGNkYi0wZjU0LTRkYzctYTk2NS1iMGVhNTRmNGJjY2IiLCJleHAiOjE2MTA2MTg2MzksIm5iZiI6MCwiaWF0IjoxNjEwNjA3ODM5LCJpc3MiOiJodHRwOi8vMTkyLjE2OC44NS44MzoxODA4MC9hdXRoL3JlYWxtcy9qc3RpcG0iLCJhdWQiOiJodHRwOi8vMTkyLjE2OC44NS44MzoxODA4MC9hdXRoL3JlYWxtcy9qc3RpcG0iLCJzdWIiOiJlM2MxMDA3YS0yNmQ3LTQ0NjAtYTI1NC04ZDc0M2FmYmQ1MDUiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoicG9ydGFsIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiZTQ1NGVlYzMtNjRhNS00NzFjLWJjNDMtNTRkMTUxNzQ2NzQ5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwifQ.J4FwND09d-47uH1KVYaj56WmZjz3eps3uxaK0SCrodQ'}, 'timestamp': 1610607828869, 'workid': None}
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.message
+                      </td>
+                      <td>equals</td>
+                      <td>登录成功！</td>
+                      <td>登录成功！</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>3488</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>1252.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>247.582</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>

@@ -1,0 +1,18 @@
+- config:
+    name: pm
+    request:
+      base_url: http://192.168.85.85:2280
+      headers:
+        Content-Type: application/json;charset=UTF-8
+- test:
+    name: login
+    request:
+      json:
+        password: jsti@pm
+        username: '026613'
+      method: POST
+      url: /bff/author/loginNew
+    validate:
+    - check: content.message
+      comparator: equals
+      expected: 登录成功！
